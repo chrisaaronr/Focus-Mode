@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tops' Focus Mode</title>
+    
+    <!--External Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/85b6c3303f.js" crossorigin="anonymous"></script>
+    
+    <!--External CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        
+   
+    </nav>
+
+    <!--Main Page-->
+    <div class="container">
+        <section class="pomodoro">
+            <div class="outerRing">
+                <div class="timer">
+                    <h2>focus mode.</h2>
+                    <div id="time">
+                        <span id="minutes">00</span>
+                        <span id="colon">:</span>
+                        <span id="seconds">10</span>
+                    </div>
+                    <div id="stsp">START</div>
+                    <span id="setting"><i class="fa-solid fa-gear"></i></span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="music-player">
+            <div class="player">
+                <img src="assets/images/record.png" alt="Playlist Image" class="playlist-image">
+                <h2 id="title">Song Name</h2>
+                <h3 id="artist">LoFi Records</h3>
+                <img class="cover" src="assets/images/1amstudysession.png">
+                <div class="slidecontainer">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fa-solid fa-volume-low"></i>
+                </div>
+                <div class="controls">
+                    <button class="previous" id="previous">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button class="play-pause" id="play-pause">
+                        <i class="fa-solid fa-play"></i> <!-- Pause icon for toggle//  <i class="fa-solid fa-pause"></i> -->
+                    </button>
+                    <button class="next" id="next"><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+            </div>
+            
+            <div class="playlist">
+                <h2>1 A.M. Study Sessions</h2>
+                <ul class="song-list">
+                    <li data-src="assets/music/1 A.M Study Session/03 Fatb - Cotton Cloud (Kupla Master).mp3" data-name="Cotton Cloud" data-index="1"><span>Cotton Cloud</span><span>02:03</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/01 WYS - Snowman (Kupla Master).mp3" data-name="Snowman" data-index="0"><span>Snowman</span><span>03:15</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/04 rook1e x tender spring - the places we used to walk (Kupla master).mp3" data-name="the places we used to walk" data-index="2"><span>the places we used to walk </span><span>02:16</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/05 imagiro - wool gloves (Kupla Master).mp3" data-name="wool gloves" data-index="3"><span>wool gloves</span><span>02:46</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/06 Glimlip x Yasper - I_m sorry (Mastered).mp3" data-name="Im Sorry" data-index="4"><span>Im Sorry</span><span>02:17</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/07 mell-ø - Nova (Kupla Master).mp3" data-name="Nova" data-index="5"><span>Nova</span><span>01:44</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/08 goosetaf x the fields tape x francis - carried away (Kupla Master).mp3" data-name="Carried Away" data-index="5"><span>Carried Away</span><span>01:55</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/09 j_san x epektase - snow _ sand (Kupla Master).mp3" data-name="Snow Sand" data-index="7"><span>Snow Sand</span><span>02:45</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/10 HM Surf - Single Phial (Kupla Master).mp3" data-name="Single Phial" data-index="8"><span>Single Phial</span><span>01:44</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/11 cocabona x Glimlip - Drops (Kupla Master).mp3" data-name="Drops" data-index="9"><span>Drops</span><span>02:03</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/12 Aso - espresso (Kupla Master).mp3" data-name="Espresso" data-index="10"><span>Espresso</span><span>02:42</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/13 Ambulo x mell-ø - Luminescence (Kupla Master).mp3" data-name="Luminescence" data-index="11"><span>Luminescence</span><span>01:40</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/14 DLJ x BIDØ - Explorers (Kupla Master).mp3" data-name="Explorers" data-index="12"><span>Explorers</span><span>02:03</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/15 Sarcastic Sounds - Wish You Were Mine (Kupla Master).mp3" data-name="Wish You Were Mine" data-index="13"><span>Wish You Were Mine</span><span>02:02</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/16 BluntOne - Reflections (Kupla Master).mp3" data-name="Reflections" data-index="14"><span>Reflections</span><span>02:02</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/17 Purrple Cat - Alone Time (Kupla Master).mp3" data-name="Alone Time" data-index="15"><span>Alone Time</span><span>03:23</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/18 Kupla - Owls of the Night (Kupla Master).mp3" data-name="Owls of the Night" data-index="16"><span>Owls of the Night</span><span>02:22</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/19 ENRA - amber (Kupla Master).mp3" data-name="amber" data-index="17"><span>amber</span><span>01:29</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/20 Psalm Trees - fever (Kupla Master).mp3" data-name="fever" data-index="18"><span>fever</span><span>02:33</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/21 H.1 - Circle (Kupla Master).mp3" data-name="Circle" data-index="19"><span>Circle</span><span>01:53</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/22 Pandrezz - Cuddlin (Kupla Master).mp3" data-name="Cuddlin" data-index="20"><span>Cuddlin</span><span>02:57</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/23 Jordy Chandra - Late Night Call (Kupla Master).mp3" data-name="Late Night Call" data-index="21"><span>Late Night Call</span><span>02:15</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/24 less.people - Gyoza (Kupla Master).mp3" data-name="Gyoza" data-index="22"><span>Gyoza</span><span>02:00</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/25 G Mills - Keyframe (Kupla Master).mp3" data-name="Keyframe" data-index="23"><span>Keyframe</span><span>02:54</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/26 mvdb - breeze (Kupla Master).mp3" data-name="breeze" data-index="24"><span>breeze</span><span>03:15</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/27 Mondo Loops - Lunar Drive (Kupla Master).mp3" data-name="Lunar Drive" data-index="25"><span>Lunar Drive</span><span>03:09</span></li>
+                    <li data-src="assets/music/1 A.M Study Session/28 dryhope - Steps (Kupla Master).mp3" data-name="Steps" data-index="26"><span>Steps</span><span>02:31</span></li>
+                </ul>
+                <audio src="" id="audio"></audio>
+            </div>
+        </section>
+    </div>
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+</html>
